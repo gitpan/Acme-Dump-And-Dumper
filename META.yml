@@ -20,7 +20,7 @@ name: Acme-Dump-And-Dumper
 provides:
   Acme::Dump::And::Dumper:
     file: lib/Acme/Dump/And/Dumper.pm
-    version: 1.001001
+    version: 1.001002
 requires:
   Data::Dumper: 0
   Data::Rmap: 0
@@ -34,7 +34,7 @@ resources:
   bugtracker: https://github.com/zoffixznet/acme-dump-and-dumper/issues
   homepage: http://metacpan.org/release/Acme-Dump-And-Dumper
   repository: git://github.com/zoffixznet/acme-dump-and-dumper.git
-version: 1.001001
+version: 1.001002
 x_Dist_Zilla:
   perl:
     version: 5.014002
@@ -240,7 +240,7 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::Git::NextVersion
       name: '@Author::ZOFFIX/Git::NextVersion'
-      version: 2.019
+      version: 2.020
     -
       class: Dist::Zilla::Plugin::AutoMetaResources
       name: '@Author::ZOFFIX/AutoMetaResources'
@@ -264,19 +264,19 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::Git::Check
       name: '@Author::ZOFFIX/Git::Check'
-      version: 2.019
+      version: 2.020
     -
       class: Dist::Zilla::Plugin::Git::Commit
       name: '@Author::ZOFFIX/Git::Commit'
-      version: 2.019
+      version: 2.020
     -
       class: Dist::Zilla::Plugin::Git::Tag
       name: '@Author::ZOFFIX/Git::Tag'
-      version: 2.019
+      version: 2.020
     -
       class: Dist::Zilla::Plugin::Git::Push
       name: '@Author::ZOFFIX/Git::Push'
-      version: 2.019
+      version: 2.020
     -
       class: Dist::Zilla::Plugin::UploadToCPAN
       name: '@Author::ZOFFIX/UploadToCPAN'

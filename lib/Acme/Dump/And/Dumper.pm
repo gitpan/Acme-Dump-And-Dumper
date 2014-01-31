@@ -3,7 +3,7 @@ package Acme::Dump::And::Dumper;
 use strict;
 use warnings;
 
-our $VERSION = '1.001001'; # VERSION
+our $VERSION = '1.001002'; # VERSION
 
 require Exporter;
 our @ISA = qw/Exporter  Data::Dumper/;
@@ -108,7 +108,8 @@ object's class. B<See caveats section below>.
 
 Whenever possible, the module will try to deep clone the structure
 before messing with it and dumping it. B<However>, since not everything
-is deep clonable, it fails to deep clone, the module will modify the original data structure, and method call on what B<used to be> objects
+is deep clonable, if the deep clone fails, the module will modify the
+original data structure, and method call on what B<used to be> objects
 will obviously fail.
 
 =head1 HISTORY
@@ -130,7 +131,7 @@ P.S.: eventually I ended up using L<Data::Rmap> instead of the Freezer.
 =begin html
 
 <img src="http://zoffix.com/CPAN/Acme-Dump-and-Dumper.jpg"
-    style="border: 2px solid #aaa!important; display: block!important; margin: 20px auto!important;"
+    style="border: 2px solid #aaa!important; display: block!important; margin: 20px 0!important;"
     alt="Dumb and Dumber">
 
 =end html
