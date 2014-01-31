@@ -3,7 +3,7 @@ package Acme::Dump::And::Dumper;
 use strict;
 use warnings;
 
-our $VERSION = '1.001002'; # VERSION
+our $VERSION = '1.001003'; # VERSION
 
 require Exporter;
 our @ISA = qw/Exporter  Data::Dumper/;

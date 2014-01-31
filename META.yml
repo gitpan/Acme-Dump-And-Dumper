@@ -20,7 +20,7 @@ name: Acme-Dump-And-Dumper
 provides:
   Acme::Dump::And::Dumper:
     file: lib/Acme/Dump/And/Dumper.pm
-    version: 1.001002
+    version: 1.001003
 requires:
   Data::Dumper: 0
   Data::Rmap: 0
@@ -34,7 +34,7 @@ resources:
   bugtracker: https://github.com/zoffixznet/acme-dump-and-dumper/issues
   homepage: http://metacpan.org/release/Acme-Dump-And-Dumper
   repository: git://github.com/zoffixznet/acme-dump-and-dumper.git
-version: 1.001002
+version: 1.001003
 x_Dist_Zilla:
   perl:
     version: 5.014002
